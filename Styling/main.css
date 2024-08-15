@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    text-align: center;
+}
+
+header{
+    padding: 40px;
+}
+
+.bgImg{
+    /* width: 100vh; */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)),
+    url("../Images/placeholder.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* filter: brightness(30%); */
+}
+
+footer{
+    height: 300px;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, rgba(228, 0, 0, 0.4), rgba(214, 116, 0, 0.4), rgba(241, 203, 0, 0.4));
+  background-size: 180% 180%;
+  animation: gradient-animation 50s ease infinite;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.headerTxt{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 4pt;
+}
+
+.otherTxt{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
