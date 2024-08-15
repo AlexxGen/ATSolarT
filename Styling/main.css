@@ -8,6 +8,13 @@ header{
     padding: 40px;
 }
 
+main{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
 footer{
     height: 300px;
 }
@@ -49,8 +56,20 @@ nav a{
 .gradient-background {
   background: linear-gradient(300deg, rgba(228, 0, 0, 0.4), rgba(214, 116, 0, 0.4), rgba(241, 203, 0, 0.4));
   background-size: 180% 180%;
-  animation: gradient-animation 50s ease infinite;
+  animation: gradient-animation 18s ease infinite;
 }
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
 .headerTxt{
     font-family: "Orbitron", sans-serif;
@@ -69,4 +88,26 @@ nav a{
 .message{
     font-size: 1.5rem;
     font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.snippet{
+    display: flex;
+    align-items: center;
+}
+
+.snippet img{
+    margin-right: 50px;
+    float: left;
+}
+
+.snippet p{
+    flex: 1;
+}
+
+.reviews{
+    float: none;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
