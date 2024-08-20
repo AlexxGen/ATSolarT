@@ -102,8 +102,8 @@ nav a{
 
 /* In the Main */
 main{
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 5%;
     margin-top: 5%;
 }
@@ -132,6 +132,7 @@ main{
 /* In the footer */
 footer{
     height: 300px;
+    background-color: lightgray;
 }
 
 /* .gradient-background {
