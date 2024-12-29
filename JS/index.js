@@ -6,3 +6,12 @@ $("nav a").mouseover(function(){
 $("nav a").mouseout(function(){
     $(this).removeClass("navAHover");
 });
+
+window.addEventListener("scroll", function(){
+    if(window.scrollY > 0){
+        $(".headScroll").removeClass("inactive");
+    }else{
+        $(".headScroll").addClass("inactive");
+    }    
+})
+

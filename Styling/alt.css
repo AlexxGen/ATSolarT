@@ -4,6 +4,7 @@
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
+    color: white;
 }
 
 .otherTxt{
@@ -11,12 +12,14 @@
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
+    color: white;
 }
 
 /* Sections */
 body{
     margin: 0;
     text-align: center;
+    background-color: rgb(19, 19, 19);
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-optical-sizing: auto;
@@ -25,19 +28,40 @@ body{
 }
 
 /* In the Header */
-header{
-    padding: 40px;
+.headScroll{
+    position: fixed;
+    width: 100vw;
+    font-size: smaller;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.name{
+#tabs{
+    justify-self: right;
+    align-items: center;
+} 
+
+.headStay #tabs{
+    padding-top: 40px;
+    padding-right: 40px;
+}
+
+.title{
+    padding: 40px;
     display: flex;
-    align-content: center;
     justify-content: center;
+    align-items: center;
+}
+
+.title a:has(h1){
+    justify-self: left;
+    align-self: left;
+    width: fit-content;
+    padding-left: 30px;
+    padding-right: 40px;
 }
 
 h1{
     letter-spacing: 4pt;
-    margin-left: 50px;
 }
 
 header img{
@@ -52,7 +76,7 @@ nav{
 }
 
 a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -70,23 +94,21 @@ nav a{
 
 /* Message */
 .message{
+    display: flex;
     font-size: 1.5rem;
     font-weight: bold;
     /* margin-top: 5%; */
     margin-bottom: 5%;
     height: 800px;
-    border-top: 30px solid black;
-    border-bottom: 30px solid black;
+    border-top: 30px solid  rgb(19, 19, 19);
+    border-bottom: 30px solid  rgb(19, 19, 19);
 }
 
-.message div{
-    width: 25%;
+.message p{
+    /* width: 25%;
     height: 50%;
     margin-left: 20%;
-    background-color: black;
-    color: white;
-
-    display: flex;
+    background-color:  rgb(19, 19, 19); */
     align-items: center;
     justify-content: center;
 }
@@ -137,7 +159,7 @@ main{
 /* In the footer */
 footer{
     height: 200px;
-    background-color: lightgray;
+    background-color: black;
     padding: 20px;
 }
 
@@ -158,6 +180,8 @@ footer{
       background-position: 0% 50%;
     }
   } */
+
+  .inactive{display: none;}
 
 
 
