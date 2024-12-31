@@ -8,7 +8,7 @@ $("nav a").mouseout(function(){
 });
 
 window.addEventListener("scroll", function(){
-    if(window.scrollY > 0){
+    if(window.scrollY > 200){
         $(".headScroll").removeClass("inactive");
     }else{
         $(".headScroll").addClass("inactive");

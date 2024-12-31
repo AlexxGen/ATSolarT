@@ -1,31 +1,86 @@
+/* Fonts */
+.headerTxt{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: white;
+}
+
+.otherTxt{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: white;
+}
+
 /* Sections */
 body{
     margin: 0;
     text-align: center;
+    background-color: rgb(19, 19, 19);
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
 }
 
+/* In the Header */
 header{
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.headScroll{
+    position: fixed;
+    width: 80vw;
+    font-size: smaller;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#tabs{
+    justify-self: right;
+    align-items: center;
+} 
+
+.headStay #tabs{
+    padding-top: 40px;
+}
+
+.title{
     padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-main{
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 5%;
-    margin-top: 5%;
+.title a:has(h1){
+    justify-self: left;
+    align-self: left;
+    width: fit-content;
+    padding-left: 30px;
+    padding-right: 40px;
 }
 
-footer{
-    height: 300px;
-}
-
-/* Elements */
 h1{
     letter-spacing: 4pt;
 }
 
+header img{
+    float: left;
+    height: 5rem;
+    width: auto;
+}
+
+nav{
+    display: block;
+    float: none;
+}
+
 a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -36,14 +91,36 @@ nav a{
     font-size: 1.25rem;
 }
 
-/* Classes */
 .navAHover{
     text-decoration: underline;
     font-weight: bold;
 }
 
+/* Message */
+.message{
+    display: flex;
+    border-top: 30px solid  rgb(19, 19, 19);
+    border-bottom: 30px solid  rgb(19, 19, 19);
+    justify-content: center;
+}
+
+.message p{
+    /* width: 25%;
+    height: 50%;
+    margin-left: 20%;
+    background-color:  rgb(19, 19, 19); */
+    /* display: flex; */
+    font-size: 2rem;
+    font-weight: bold;
+    align-self: center;
+    margin: 50px;
+}
+
 .bgImg{
-    /* width: 100vh; */
+    width: 80vw;
+    height: 100vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)),
     url("../Images/placeholder.jpg");
     background-repeat: no-repeat;
@@ -52,44 +129,14 @@ nav a{
     /* filter: brightness(30%); */
 }
 
-.gradient-background {
-  background: linear-gradient(300deg, rgba(228, 0, 0, 0.4), rgba(214, 116, 0, 0.4), rgba(241, 203, 0, 0.4));
-  background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
-}
-
-@keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-
-.headerTxt{
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-}
-
-.otherTxt{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-}
-
-.message{
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 5%;
+/* In the Main */
+main{
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 5%;
+    margin-top: 5%;
 }
+
 
 .snippet{
     display: flex;
@@ -110,3 +157,33 @@ nav a{
     margin-bottom: 5%;
     margin-top: 5%;
 }
+
+/* In the footer */
+footer{
+    height: 200px;
+    background-color: black;
+    padding: 20px;
+}
+
+/* .gradient-background {
+  background: linear-gradient(300deg, rgba(228, 0, 0, 0.4), rgba(214, 116, 0, 0.4), rgba(241, 203, 0, 0.4));
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  } */
+
+  .inactive{display: none;}
+
+
+
