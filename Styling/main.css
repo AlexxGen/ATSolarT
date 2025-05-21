@@ -1,6 +1,12 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 /* Fonts */
 .headerTxt{
     font-family: "Orbitron", sans-serif;
+    font-size: x-small;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
@@ -17,62 +23,79 @@
 
 /* Sections */
 body{
-    margin: 0;
-    text-align: center;
+    text-align: left;
     background-color: white;
-
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
 }
 
 /* In the Header */
 header{
-    margin-left: 10vw;
-    margin-right: 10vw;
-}
-
-.headScroll{
     position: fixed;
-    width: 80vw;
-    font-size: smaller;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-#tabs{
-    justify-self: right;
-    align-items: center;
-} 
-
-.headStay #tabs{
-    padding-top: 40px;
-}
-
-.title{
-    padding: 40px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* width: 97%; */
+    background-color: white;
     display: flex;
-    justify-content: center;
+    /* flex-wrap: nowrap; */
+    justify-content: space-around;
+    padding: 1rem 0;
     align-items: center;
 }
 
-.title a:has(h1){
-    justify-self: left;
-    align-self: left;
-    width: fit-content;
-    padding-left: 30px;
-    padding-right: 40px;
+#title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 h1{
     letter-spacing: 4pt;
 }
 
-header img{
+#title img{
+    max-width: 70px;
+    height: auto;
+}
+
+#tabs{
+    display: flex;
+    justify-self: right;
+    align-items: center;
+}
+
+/* .headScroll{
+    position: fixed;
+    /* width: 80vw; */
+    /* font-size: smaller; 
+    background-color: white;
+    /* background-color: rgba(255, 255, 255, 0.5); 
+} */
+
+/* .headStay #tabs{
+    padding-top: 40px;
+} */
+
+/* .title{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .title a:has(h1){
+    justify-self: left;
+    align-self: left;
+    width: fit-content;
+    padding-left: 30px;
+    padding-right: 40px;
+} */
+
+
+/* header img{
     float: left;
     height: 5rem;
     width: auto;
-}
+} */
 
 nav{
     display: block;
@@ -112,17 +135,17 @@ nav a{
     /* display: flex; */
     font-size: 2rem;
     font-weight: bold;
+    color: white;
+    text-align: center;
     align-self: center;
-    margin: 50px;
+    margin: 10rem;
 }
 
 .bgImg{
-    width: 80vw;
     height: 100vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    width: auto;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)),
-    url("../Images/placeholder.jpg");
+    url("../Images/solar1_cut.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -131,12 +154,8 @@ nav a{
 
 /* In the Main */
 main{
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 5%;
-    margin-top: 5%;
+    margin: 10% 10%;
 }
-
 
 .snippet{
     display: flex;
@@ -144,12 +163,21 @@ main{
 }
 
 .snippet img{
-    margin-right: 50px;
+    max-width: 10rem;
+    height: auto;
+    margin: 0 3rem;
     float: left;
 }
 
 .snippet p{
     flex: 1;
+}
+
+#services{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 132, 0);
 }
 
 /* Reviewa */
@@ -179,30 +207,13 @@ main{
 
 /* In the footer */
 footer{
+    text-align: center;
     height: 200px;
-    background-color: white;
+    background-color: rgb(228, 228, 228);
     padding: 20px;
 }
 
-/* .gradient-background {
-  background: linear-gradient(300deg, rgba(228, 0, 0, 0.4), rgba(214, 116, 0, 0.4), rgba(241, 203, 0, 0.4));
-  background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
-}
-
-@keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  } */
-
-  .inactive{display: none;}
+  /* .inactive{display: none;} */
 
 
 
