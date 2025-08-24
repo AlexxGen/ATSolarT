@@ -15,7 +15,7 @@ html, body {
 
 .subheaderTxt{
     font-family: "Orbitron", sans-serif;
-    font-size: auto;
+    font-size: x-large;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -24,7 +24,8 @@ html, body {
 
 .otherTxt{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-optical-sizing: auto;
+    font-size: large;
+    /* font-optical-sizing: auto; */
     font-weight: 200;
     font-style: normal;
     color: black;
@@ -175,8 +176,9 @@ nav a{
 /* In the Main */
 .section{
     margin: 0%;
-    margin-bottom: 5%;
-    padding: 5% 10%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding: 4%;
 } 
 
 .bodyText{
@@ -207,6 +209,7 @@ nav a{
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
+    place-items: center;
 }
 
 .panel{
