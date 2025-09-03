@@ -81,7 +81,7 @@ nav a{
 }
 
 .navAHover{
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-weight: bold;
 }
 

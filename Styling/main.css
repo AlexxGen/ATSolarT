@@ -136,7 +136,7 @@ nav a{
 }
 
 .navAHover{
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-weight: bold;
 }
 
@@ -334,4 +334,5 @@ footer{
 
 .bold{
     font-weight: bold;
+    text-decoration-line: underline;
 }

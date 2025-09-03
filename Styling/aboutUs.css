@@ -23,7 +23,7 @@ html, body {
 
 /* Sections */
 body{
-    text-align: left;
+    text-align: center;
     background-color: white;
 }
 
@@ -81,7 +81,7 @@ nav a{
 }
 
 .navAHover{
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-weight: bold;
 }
 
@@ -112,6 +112,8 @@ main{
 .snippet p{
     flex: 1;
 }
+
+
 
 /* In the footer */
 footer{
