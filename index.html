@@ -7,56 +7,30 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
     <link href="./Styling/main.css" rel="stylesheet">
 </head>
 
-<body class="otherTxt">
-    <!-- <header class="headerTxt headScroll inactive"> -->
-    <header >
-        <div id="title" class="headerTxt">
-            <img src="./Images/ATSTLogoFinal.png" alt="Logo">
-            <h1><a href="./index.html">After The Solar Tsunami</a></h1>   
+<body class="otherTxt">    
+    <header class="bgImg headerTxt">
+        <div id="tabs">
+            <nav class="otherTxt">
+                <a href="./aboutUs.html">About Us</a>
+                <a href="./aboutServices.html">About Services</a>
+                <a href="./contactUs.html">Contact Us</a>
+            </nav>  
         </div>
-
-        <nav id="tabs" class="otherTxt">
-            <a href="./aboutUs.html">About Us</a>
-            <a href="./aboutServices.html">About Services</a>
-            <a href="./contactUs.html">Contact Us</a>
-        </nav> 
-    </header>    
-
-    <!-- <header class="headerTxt headStay">
-         <div class="title">
-            <img src="./Images/ATSTLogoFinal.png" alt="Logo">
-            <a href="./index.html"><h1>After The Solar Tsunami</h1></a>   
-        </div>
-
-        <nav id="tabs">
-            <a href="./aboutUs.html">About Us</a>
-            <a href="./aboutSolar.html">About Solar</a>
-            <a href="./contactUs.html">Contact Us</a>
-        </nav>
-
-        <div class="title">
+        <div id="title">
             <div>
                 <img src="./Images/ATSTLogoFinal.png" alt="Logo">
-                <a href="./index.html"><h1>After The Solar Tsunami</h1></a>   
+                <h1><a href="./index.html">After The Solar Tsunami</a></h1>   
             </div>
+        </div> 
+    </header>
 
-
-            <nav id="tabs">
-                <a href="./aboutUs.html">About Us</a>
-                <a href="./aboutSolar.html">About Solar</a>
-                <a href="./contactUs.html">Contact Us</a>
-            </nav> 
-        </div>
-    </header> -->
-    
-    <div class="message bgImg otherTxt">
-        <p>The right company to help you and your business after the solar tsunami</p> 
-    </div>
+        <!-- <header class="headerTxt headScroll inactive"> -->
+ 
 
     <main class="otherTxt">
         <div class="section">
@@ -71,49 +45,50 @@
             </div>
         </div>
 
+        <!-- Turn these into big images and have it be a caresel that cycles through the different kinds of services -->
         <div id="services" class="section">
             <h2 class="subheaderTxt">Services</h2>
             <div class="bodyText">
                 <h3>Commercial Photovoltic Solar Services</h3>
-                <div class="gridLayout">
 
-                    <div class="panel">
+                <ul class="carousel">
+                    <li class="panel">
                         <div class="subPanel">
                             <div class="label">
-                                <p>New system designs</p>
+                                <p>New System Designs</p>
                             </div>
                             <img src="./Images/solar2.jpg" alt="System Designs">
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="panel">
+                    <li class="panel">
                         <div class="subPanel">
                             <div class="label">
                                 <p>Existing systems' repowering</p>
                             </div>
                             <img src="./Images/atst1.jpg" alt="System Designs">
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="panel">
+                    <li class="panel">
                         <div class="subPanel">
                             <div class="label">
                                 <p>Operation & maintenance, monitoring & asset management</p>
                             </div>
                             <img src="./Images/atst4.jpg" alt="System Designs">
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="panel">
+                    <li class="panel">
                         <div class="subPanel">
                             <div class="label">
                                 <p>Performance analysis, I-V Curves & Thermal Imaging</p>
                             </div>
                             <img src="./Images/atst2.jpg" alt="System Designs">
                         </div>
-                    </div>
+                    </li>
 
-                </div>
+                </ul>
             </div>
         </div>
 
