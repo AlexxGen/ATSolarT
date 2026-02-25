@@ -8,7 +8,7 @@ html { font-size: 100%; }
 /* Fonts */
 .headerTxt{
     font-family: "Zalando Sans Expanded", sans-serif;
-    font-size: 4rem;
+    font-size: 2rem;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
@@ -17,12 +17,15 @@ html { font-size: 100%; }
 
 .subheaderTxt{
     font-family: "Zalando Sans Expanded", sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     color: white;
-    background: linear-gradient(white, orange);
+}
+.gradientText{
+    color: white;
+    background: linear-gradient(orangered, orange);
     background-position: 0;
     background-clip: text;
     -webkit-background-clip: text;
@@ -31,7 +34,7 @@ html { font-size: 100%; }
 
 .otherTxt{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     /* font-optical-sizing: auto; */
     font-weight: 200;
     font-style: normal;
@@ -44,9 +47,12 @@ html { font-size: 100%; }
 body{
     text-align: left;
     background-color: rgb(22, 22, 22);
+    /* background-color: beige; */
+
 }
 
 h1{
+    text-align: left;
     letter-spacing: 4pt;
 }
 
@@ -70,6 +76,15 @@ header{
     z-index: 10;
 }
 
+#title h1{
+    text-align: left;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    width: fit-content;
+}
+/* 75d3ff */
+
 #title{
     display: flex;
     height: fit-content;
@@ -83,13 +98,6 @@ header{
     width: fit-content;
     justify-content: space-around;
     gap: 1rem;
-}
-
-#title h1{
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    color: white;
 }
 
 #title img{
@@ -316,7 +324,7 @@ nav a{
 .panelLong{
     display: inline-block;
     height: 35rem;
-    width: 30rem;
+    width: 31rem;
     /* height: 200px;
     width: 400px; */
     text-align: center;
@@ -324,6 +332,16 @@ nav a{
     /* border: 3px solid rgb(247, 178, 109); */
     border-radius: 15%;
     margin: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+#higherPlan{
+    background: linear-gradient(orangered, orange);
+    color: black;
+}
+
+.blackTxt{
+    color: black;
 }
 
 .subPanel{
@@ -332,7 +350,12 @@ nav a{
 
 .planSubPanel{
     position: relative;
-    padding: 2rem;
+    padding: 1rem;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
     /* color: #DAD3BE; */
 }
 
@@ -358,6 +381,7 @@ nav a{
     width: 100%;
     height: auto; 
     z-index: 1;
+    padding: 1rem 0;
 }
 
 .panel img{
@@ -371,8 +395,21 @@ nav a{
 }
 
 .benefitsList{
-    margin: 10%;
+    margin: 2rem;
     text-align: left;
+}
+
+.learnMoreBtn p{
+    padding: 0;
+    margin: 0;
+}
+
+.learnMoreBtn{
+    width: fit-content;
+    height: fit-content;
+    padding: 0.75rem;
+    align-self: center;
+    background-color:rgb(22, 22, 22);
 }
 
 #serviceMsg{
@@ -421,7 +458,7 @@ footer{
 
 .bold{
     font-weight: bold;
-    text-decoration-line: underline;
+    /* text-decoration-line: underline; */
 }
 
 @media (max-width: 1300px ){
