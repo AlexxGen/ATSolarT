@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Contact Us</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,8 +28,23 @@
     </header>    
 
     <main>
-        <h2>Coming Soon...</h2>
-        <h2>Page currently under construction</h2>
+        <div class="contactContainer">
+            <div>
+                <h2 class="subheaderTxt gradientText">Get in Touch</h2>
+                <form action="https://api.web3forms.com/submit" method="POST" class="inputBoxes bodyText">
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+                    <input type="text" name="name" placeholder="Your Name" class="otherTxt txtBox" required>
+                    <input type="email" name="email" placeholder="Your Email" class="otherTxt txtBox" required>
+                    <textarea name="message" placeholder="Your Message" class="otherTxt txtBox" required></textarea>
+                    <button type="submit" class="otherTxt"> Submit </button>
+                </form>
+            </div>
+            <div class="contactImg">
+                <img src="./Images/ATSTLogoFinal.png" alt="Logo">
+            </div>
+        </div>
+
         <!-- <div class="snippet bodyText">
             <img src="./Images/Evgeni_Genchev_QRCode.png" alt="QR Code">
             <div>
@@ -39,7 +54,7 @@
 
     </main>
 
-    <footer class="otherText">
+    <footer class="otherTxt">
         <nav class="">
             <a href="./contactUs.html">Top</a>
         </nav>
