@@ -152,6 +152,95 @@ main{
     flex: 1;
 }
 
+.section{
+    margin: 0%;
+    /* margin-top: 2%;
+    margin-bottom: 2%; */
+    padding: 3% 8%;
+} 
+
+
+#plans{
+    height: 50%;
+    width: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    /* url("../Images/solar2_cut.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: bottom; */
+}
+
+#plans::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* background: radial-gradient(circle, transparent 60%, black 100%); */
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.panelLong{
+    display: inline-block;
+    height: 35rem;
+    width: 31rem;
+    /* height: 200px;
+    width: 400px; */
+    text-align: center;
+    background-color:  rgb(50, 50, 50);
+    /* border: 3px solid rgb(247, 178, 109); */
+    border-radius: 15%;
+    margin: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+
+#higherPlan{
+    background: linear-gradient(rgba(255, 69, 0, 0.8), rgba(255, 165, 0, 0.8));
+    color: black;
+}
+
+.planSubPanel{
+    position: relative;
+    padding: 1rem;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    /* color: #DAD3BE; */
+}
+
+.gridLayout{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.benefitsList{
+    margin: 2rem;
+    text-align: left;
+}
+
+.learnMoreBtn p{
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+.learnMoreBtn{
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    align-self: center;
+    background: linear-gradient(135deg, orangered, orange);
+    /* background-color:rgb(22, 22, 22); */
+    border-radius: 50px;
+}
+
 /* In the footer */
 footer{
     text-align: center;
@@ -166,14 +255,14 @@ b{
     font-weight: bold;
 }
 
-/* @media (max-width: 1300px ){
+@media (max-width: 1300px ){
     .gridLayout{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-} */
+}
 
 @media (max-width: 940px ){
     html { font-size: 70%; }
