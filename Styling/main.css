@@ -100,7 +100,7 @@ header{
     gap: 1rem;
 }
 
-#title img{
+.logo{
     display: flex;
     align-self: center;
     width: 6rem;
@@ -424,29 +424,18 @@ nav a{
     color: white;
 }
 
-/* Reviewa */
-.reviews{
-    display: flex;
-    justify-content: space-around;
-    float: none;
-    margin-bottom: 5%;
-    margin-top: 5%;
-}
 
-.review img{
-    width: 90%;
-    height: auto;
-}
+/* Testimonial */
 
-/* Partners */
-.partners{
+#testimonial{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
 }
 
-.partners img{
-    width: 30%;
+.testimonialText{
+    border-left: 1px solid white;
+    padding-left: 1.5rem;
 }
 
 /* In the footer */
@@ -470,6 +459,15 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    #testimonial{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonialText{
+        border: none;
     }
 }
 
