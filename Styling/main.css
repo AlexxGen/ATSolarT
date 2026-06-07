@@ -453,6 +453,10 @@ footer{
     /* text-decoration-line: underline; */
 }
 
+.spacing{
+    padding: 2rem 0rem;
+}
+
 @media (max-width: 1300px ){
     .gridLayout{
         display: flex;
