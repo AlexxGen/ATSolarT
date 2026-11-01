@@ -104,7 +104,7 @@ header{
     display: flex;
     align-self: center;
     width: 6rem;
-    height: 6rem;
+    height: auto;
 }
 
 .bgImg{
